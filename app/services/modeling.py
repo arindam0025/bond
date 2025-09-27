@@ -14,8 +14,8 @@ from pmdarima import auto_arima
 import warnings
 warnings.filterwarnings('ignore')
 
-from ..utils.constants import HORIZONS, BACKTEST_PARAMS
-from ..utils.seeds import set_seeds
+from utils.constants import HORIZONS, BACKTEST_PARAMS
+from utils.seeds import set_seeds
 
 class ModelTrainer:
     """Handles model training and prediction for commodity prices."""

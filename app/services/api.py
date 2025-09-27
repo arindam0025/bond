@@ -19,10 +19,10 @@ try:
 except ImportError:
     API_AVAILABLE = False
 
-from ..utils.constants import COMMODITIES, HORIZONS
-from ..services.data_loader import DataLoader
-from ..services.modeling import ModelTrainer
-from ..services.features import FeatureEngineer
+from utils.constants import COMMODITIES, HORIZONS
+from services.data_loader import DataLoader
+from services.modeling import ModelTrainer
+from services.features import FeatureEngineer
 
 class PredictionRequest(BaseModel):
     symbol: str

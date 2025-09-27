@@ -11,6 +11,10 @@ from typing import Dict, List, Optional, Tuple
 import requests
 import time
 
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
+
 from utils.constants import COMMODITIES, MACRO_INDICATORS
 from utils.guardrails import validate_data_quality, clean_data, detect_data_gaps
 from utils.dates import get_lookback_date, align_to_trading_days

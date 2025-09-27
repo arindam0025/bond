@@ -5,7 +5,7 @@ Regime detection and analysis for commodity markets.
 import pandas as pd
 import numpy as np
 from typing import Dict, List, Tuple, Optional
-from ..utils.constants import REGIMES
+from utils.constants import REGIMES
 
 class RegimeDetector:
     """Detects and analyzes market regimes for commodities."""

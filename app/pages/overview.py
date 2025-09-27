@@ -6,12 +6,12 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
-from services.data_loader import DataLoader
-from services.features import FeatureEngineer
-from services.regimes import RegimeDetector
-from services.modeling import ModelTrainer
-from services.plots import PlotBuilder
-from utils.constants import COMMODITIES, HORIZONS
+from app.services.data_loader import DataLoader
+from app.services.features import FeatureEngineer
+from app.services.regimes import RegimeDetector
+from app.services.modeling import ModelTrainer
+from app.services.plots import PlotBuilder
+from app.utils.constants import COMMODITIES, HORIZONS
 
 def show_overview():
     """Display the overview page."""

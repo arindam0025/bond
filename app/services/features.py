@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import ta
 from typing import Dict, List, Optional, Tuple
-from ..utils.constants import TECHNICAL_PARAMS
+from utils.constants import TECHNICAL_PARAMS
 
 class FeatureEngineer:
     """Creates features for commodity price prediction models."""

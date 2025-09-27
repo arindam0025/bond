@@ -14,7 +14,7 @@ try:
 except ImportError:
     SHAP_AVAILABLE = False
 
-from ..utils.constants import TECHNICAL_PARAMS
+from utils.constants import TECHNICAL_PARAMS
 
 class ModelExplainer:
     """Handles model explainability and SHAP analysis."""

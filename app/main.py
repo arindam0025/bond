@@ -12,17 +12,17 @@ app_dir = Path(__file__).parent
 sys.path.append(str(app_dir))
 
 # Import services
-from services.data_loader import DataLoader
-from services.features import FeatureEngineer
-from services.regimes import RegimeDetector
-from services.modeling import ModelTrainer
-from services.backtest import BacktestEngine
-from services.strategy import StrategySimulator
-from services.explain import ModelExplainer
-from services.plots import PlotBuilder
-from services.api import initialize_api, get_api_status
-from utils.constants import COMMODITIES, HORIZONS, MODEL_TYPES
-from utils.seeds import set_seeds
+from app.services.data_loader import DataLoader
+from app.services.features import FeatureEngineer
+from app.services.regimes import RegimeDetector
+from app.services.modeling import ModelTrainer
+from app.services.backtest import BacktestEngine
+from app.services.strategy import StrategySimulator
+from app.services.explain import ModelExplainer
+from app.services.plots import PlotBuilder
+from app.services.api import initialize_api, get_api_status
+from app.utils.constants import COMMODITIES, HORIZONS, MODEL_TYPES
+from app.utils.seeds import set_seeds
 
 # Page configuration
 st.set_page_config(

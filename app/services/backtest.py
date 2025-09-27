@@ -7,7 +7,7 @@ import numpy as np
 from typing import Dict, List, Tuple, Optional, Any
 from datetime import datetime, timedelta
 
-from ..utils.constants import BACKTEST_PARAMS
+from utils.constants import BACKTEST_PARAMS
 
 class BacktestEngine:
     """Handles backtesting of trading strategies."""
